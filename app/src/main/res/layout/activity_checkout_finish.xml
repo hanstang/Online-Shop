@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    tools:context="pack.com.seventhsite.seventhsite.CheckoutFinishActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/well_super_round"
+        >
+        <TextView
+            android:text="Thank You, We will process your transaction\n\nDon't forget upload a proof of payment after confirmation order \n\nPlease press back button to go back"
+            android:id="@+id/txtKet"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/body"
+            android:textAppearance="?android:textAppearanceLarge"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

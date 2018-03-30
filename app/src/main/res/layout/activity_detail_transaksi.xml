@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    tools:context="pack.com.seventhsite.seventhsite.DetailTransaksiActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/well_super_round">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TRANSACTION"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@color/header"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/line"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/imgProof"
+                    android:background="@drawable/noimage"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    >
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnAdd"
+                        android:text="Add Proof of Payment"
+                        android:background="@color/button"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <Button
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/btnUpload"
+                        android:text="Upload Proof of Payment"
+                        android:background="@color/button"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/txtJumlah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Total : Rp.20.000.000,00"
+                        android:textColor="@color/body"
+                        android:layout_marginTop="20dp"/>
+                    <TextView
+                        android:id="@+id/txtOngkir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Shipping Fee : Rp.20.000.000,00"
+                        android:textColor="@color/body"
+                        android:layout_marginTop="5dp"/>
+                    <TextView
+                        android:id="@+id/txtNoResi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="No Resi : BCSDA-aA121A-!2"
+                        android:textColor="@color/body"
+                        android:layout_marginTop="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List Item"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/body"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"/>
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/listItem"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp">
+            </ListView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

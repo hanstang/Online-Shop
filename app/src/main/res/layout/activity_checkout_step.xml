@@ -1,0 +1,211 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground"
+    android:orientation="vertical"
+    tools:context="pack.com.seventhsite.seventhsite.CheckoutStepActivity">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/well_super_round">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:text="SEND TO"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/header"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@color/line" />
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:textColor="#FF0F0F"
+                    android:id="@+id/txtKet"
+                    android:text="*Your Shipping Fee is free because you are reseller"/>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="Email : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:layout_marginLeft="10dp"
+                        android:hint="Your Email"
+                        android:id="@+id/etEmail"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/body"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="Name : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:hint="Your Name"
+                        android:id="@+id/etName"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="Address : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:hint="Your Address"
+                        android:id="@+id/etAddress"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="City : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <Spinner
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:id="@+id/spCity"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="Postal Code : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:hint="Your Postal Code"
+                        android:inputType="number"
+                        android:id="@+id/etPostalCode"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="Phone : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:hint="Your Phone"
+                        android:inputType="number"
+                        android:id="@+id/etPhone"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    >
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp"
+                        android:text="Cell Phone : "
+                        android:gravity="right"
+                        android:textColor="@color/body"/>
+                    <EditText
+                        android:layout_height="wrap_content"
+                        android:layout_width="fill_parent"
+                        android:hint="Your Cell Phone"
+                        android:inputType="number"
+                        android:id="@+id/etCellPhone"/>
+                </LinearLayout>
+                <Button
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Finish"
+                    android:id="@+id/btnFinish"
+                    android:background="@color/button"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

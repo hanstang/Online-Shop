@@ -1,0 +1,236 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    android:orientation="vertical"
+    tools:context="pack.com.seventhsite.seventhsite.DetailItemActivity"
+    android:background="@color/bacground"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        >
+
+        <ScrollView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/well_super_round"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    >
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/ListImage"
+                        android:layout_height="200dp"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="20dp"
+                        ></android.support.v4.view.ViewPager>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/well_super_round"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <ImageButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/addtoCart"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/add_to_cart_icon"
+                        android:background="@null"
+
+                        android:layout_marginLeft="5dp"/>
+                    <ImageButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/addComment"
+                        android:layout_gravity="right"
+                        android:src="@drawable/add_comment"
+                        android:background="@null"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"/>
+                    <ImageButton
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:id="@+id/addShare"
+                        android:layout_gravity="right"
+                        android:src="@drawable/share"
+                        android:background="@null"
+
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/well_super_round"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:orientation="horizontal"
+                    >
+                    <ImageView
+                        android:layout_height="20dp"
+                        android:layout_width="150dp"
+                        android:src="@drawable/rate0"
+                        android:id="@+id/imgRating"
+                        android:layout_marginTop="5dp"
+                        />
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="150dp"
+                        android:text="23 Review(s)"
+                        android:id="@+id/txtJumRev"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/body"
+                        />
+                    <ImageButton
+                        android:layout_height="30dp"
+                        android:layout_width="30dp"
+                        android:scaleType="fitCenter"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/arrow_right"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:id="@+id/goRev"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_height="250dp"
+                    android:layout_width="fill_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/well_super_round"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="New Text"
+                        android:id="@+id/txtNamabarang"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/header"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/line" />
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/txtDespendek"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="2dp"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/body"
+                                />
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@drawable/well_super_round"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/layoutnyarekomendasi"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="People Also Look This"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/header"
+                        />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/line" />
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/ListRekomend"
+                        android:layout_height="150dp"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:layout_marginBottom="20dp"
+                        ></android.support.v4.view.ViewPager>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+
+    <LinearLayout
+        android:id="@+id/slide_menu"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/backgroundlist"
+        android:orientation="vertical" >
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListMenu"
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.DrawerLayout>

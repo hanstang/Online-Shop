@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imgProdukCart"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Nama Produk"
+        android:id="@+id/txtNamaProdukCart"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgProdukCart"
+        android:textColor="@color/body"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/txtNamaProdukCart"
+        android:layout_toRightOf="@+id/imgProdukCart"
+        android:layout_marginTop="60dp"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rp.200.000.000"
+            android:id="@+id/txtHargaAwal"
+            android:gravity="left"
+            android:textColor="@color/body"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Rp.10.000.000"
+            android:id="@+id/txtHargaFinal"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textColor="@color/body"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Subtotal:Rp.10.000.000"
+            android:id="@+id/txtSubtotal"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:textColor="@color/body"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove"
+        android:id="@+id/btnRemove"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@color/button"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        android:id="@+id/buttonMinus"
+        android:layout_toLeftOf="@+id/txtJumlah"
+        android:layout_marginTop="40dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@color/button"
+        />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="100"
+        android:id="@+id/txtJumlah"
+        android:layout_toLeftOf="@+id/buttonPlus"
+        android:layout_marginTop="50dp"
+        android:gravity="right"
+        android:textColor="@color/body"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        android:id="@+id/buttonPlus"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="@color/button"/>
+</RelativeLayout>

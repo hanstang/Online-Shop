@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="pack.com.seventhsite.seventhsite.AddReviewActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@color/bacground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/well_super_round"
+            >
+            <LinearLayout
+                android:layout_height="60dp"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Rate : "
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="right"
+                    android:textColor="@color/body"
+                    />
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_height="60dp"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:text="Title : "
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="right"
+                    android:textColor="@color/body"
+                    />
+                <EditText
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent"
+                    android:hint="Review Title"
+                    android:id="@+id/etJudul"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_height="150dp"
+                android:layout_width="fill_parent"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:text="Review : "
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rev"
+                    android:layout_marginTop="10dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:gravity="right"
+                    android:textColor="@color/body"/>
+                <EditText
+                    android:layout_height="150dp"
+                    android:layout_width="fill_parent"
+                    android:id="@+id/fieldReview"
+                    android:background="#F0F0F0"
+                    android:layout_toRightOf="@+id/rev"
+                    android:layout_marginRight="5dp"
+                    android:gravity="left|top"
+                    android:hint="Write your review"
+                    android:inputType="textMultiLine"
+                    />
+            </RelativeLayout>
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:text="Submit"
+                android:id="@+id/btnSubmitRev"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/button"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
